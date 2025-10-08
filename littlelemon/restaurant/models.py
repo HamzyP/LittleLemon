@@ -18,4 +18,4 @@ class Menu(models.Model):
     inventory = models.IntegerField()
 
     def __str__(self):
-        return self.title #provides a human readable title instead of object.
+        return f'{self.title} : £{str(self.price)} : {str(self.inventory)}' #provides a human readable title instead of object.
