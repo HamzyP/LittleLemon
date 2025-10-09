@@ -10,7 +10,7 @@ class Booking(models.Model):
         ordering = ['-bookingDate'] #show newest bookings first by default
     
     def __str__(self):
-        return f"{self.name} for {self.no_of_guests} on {self.bookingDate.strftime('%Y-%m-%d')} at {self.bookingDate.strftime(' %H:%M')}"
+        return f"{self.name} for {self.no_of_guests} on {self.bookingDate.strftime('%Y-%m-%d')} at {self.bookingDate.strftime('%H:%M')}"
 
 class Menu(models.Model):
     title = models.CharField(max_length=255)
